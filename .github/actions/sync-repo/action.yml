@@ -8,7 +8,7 @@ inputs:
   source_branch:
     description: source branch
     required: false
-    default: "main"
+    default: "master"
   github_token:
     description: github auth token
     required: true

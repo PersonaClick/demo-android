@@ -27,5 +27,4 @@ jobs:
         uses: ./.github/actions/sync-repo # Локальный экшен
         with:
           source_repo: "https://github.com/kirill-ivanovvv/trigger-repository"
-          source_branch: "main"
           github_token: ${{ steps.app-token.outputs.token }}
