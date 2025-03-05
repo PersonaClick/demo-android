@@ -23,8 +23,22 @@ jobs:
           owner: kirill-ivanovvv
           repositories: trigger-repository
 
+      - name: Find base commit
+        id: base_commit
+        uses: rees46/workflow/.github/actions/js/find-base-commit-js@master
+        with:
+          token: ${{ steps.start.outputs.token }}
+
       - name: Sync Files
         uses: ./.github/actions/sync-repo # Локальный экшен
         with:
           source_repo: "https://github.com/kirill-ivanovvv/trigger-repository"
           github_token: ${{ steps.app-token.outputs.token }}
+
+      - name: Commit changes
+        if: ${{ !contains(github.event.pull_request.title, 'revert') && !contains(github.event.pull_request.title, 'chore') && !cancelled() }}
+        uses: rees46/workflow/.github/actions/js/commit-js@master
+        with:
+          baseCommit: ${{ steps.base_commit.outputs.baseCommit }}
+          token: ${{ steps.app-token.outputs.token }}
+          exclude: "."

@@ -40,11 +40,11 @@ runs:
         rm -rf source_repo
       shell: bash
 
-    - name: Commit and Push Changes
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-
-        git add .
-        git diff --staged --quiet || (git commit -m "chore: sync files from external repo" && git push origin HEAD)
-      shell: bash
+    # - name: Commit and Push Changes
+    #   run: |
+    #     git config --global user.name "GitHub Actions"
+    #     git config --global user.email "actions@github.com"
+    #
+    #     git add .
+    #     git diff --staged --quiet || (git commit -m "chore: sync files from external repo" && git push origin HEAD)
+    #   shell: bash
