@@ -1,0 +1,50 @@
+name: Sync Files from Another Repository
+description: Clones files from an external repository and updates the current one
+
+inputs:
+  source_repo:
+    description: source repository url
+    required: true
+  source_branch:
+    description: source branch
+    required: false
+    default: "main"
+  github_token:
+    description: github auth token
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout Target Repository (Current Repo)
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ inputs.github_token }}
+
+    - name: Clone Source Repository
+      run: |
+        git clone --depth=1 --branch=${{ inputs.source_branch }} ${{ inputs.source_repo }} source_repo
+      shell: bash
+
+    - name: Sync Files
+      run: |
+        rsync -av --progress source_repo/ ./ \
+          --exclude .git \
+          --exclude .github \
+          # --exclude .gitignore \
+          # --exclude node_modules \
+          # --exclude .env \
+          # --exclude '*.log'
+
+        rm -rf source_repo
+      shell: bash
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+        git add .
+        git diff --staged --quiet || (git commit -m "chore: sync files from external repo" && git push origin HEAD)
+      shell: bash
