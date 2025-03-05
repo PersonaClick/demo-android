@@ -3,6 +3,7 @@ name: Sync original repository
 on:
   repository_dispatch:
     types: [sync]
+  workflow_dispatch:
 
 jobs:
   run:
