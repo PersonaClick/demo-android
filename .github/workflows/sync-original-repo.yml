@@ -15,6 +15,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Test echo
+      - uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
+          owner: kirill-ivanovvv
+          repositories: trigger-repository
+
+      - name: Clone repo
         run: |
-          echo "echo on dispatch event"
+          gh repo clone https://github.com/kirill-ivanovvv/trigger-repository
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+
+      - run: ls -a -R
