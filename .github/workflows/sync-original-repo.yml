@@ -24,8 +24,7 @@ jobs:
           repositories: trigger-repository
 
       - name: Sync Files
-        uses: ./.github/actions/sync-files # Локальный экшен
+        uses: ./.github/actions/sync-repo # Локальный экшен
         with:
-          source_repo: "https://github.com/other-org/other-repo.git"
-          source_branch: "main"
+          source_repo: "https://github.com/kirill-ivanovvv/trigger-repository"
           github_token: ${{ steps.app-token.outputs.token }}

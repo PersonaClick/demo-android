@@ -8,7 +8,7 @@ inputs:
   source_branch:
     description: source branch
     required: false
-    default: "main"
+    default: "master"
   github_token:
     description: github auth token
     required: true
@@ -16,11 +16,11 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checkout Target Repository (Current Repo)
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-        token: ${{ inputs.github_token }}
+    # - name: Checkout Target Repository (Current Repo)
+    #   uses: actions/checkout@v4
+    #   with:
+    #     fetch-depth: 0
+    #     token: ${{ inputs.github_token }}
 
     - name: Clone Source Repository
       run: |
