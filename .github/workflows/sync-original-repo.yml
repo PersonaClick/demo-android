@@ -1,0 +1,19 @@
+name: Sync original repository
+
+on:
+  repository_dispatch:
+    types: [sync]
+
+jobs:
+  run:
+    name: Synchronization
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Test echo
+        run: |
+          echo "echo on dispatch event"
