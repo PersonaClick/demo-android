@@ -17,7 +17,9 @@ android {
     namespace = "personaClick.demo_android.app"
 
     defaultConfig {
-        applicationId =  "personaClick.demo_shop"
+		# TODO change config in firebase
+        # applicationId =  "personaClick.demo_shop"
+        applicationId =  "com.example.build.config"
     }
 }
 
