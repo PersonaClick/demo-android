@@ -56,6 +56,9 @@ jobs:
           SIGNING_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
 
+      - name: Debug aab file
+        run: cat $AAB_RELEASE_PATH
+
       # Sending to Google Play
       - name: Deploy to Google Play Internal Testing
         uses: r0adkll/upload-google-play@v1
