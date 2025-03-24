@@ -64,8 +64,8 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: google-play-service-account.json
-          packageName: $PACKAGE_NAME
-          releaseFiles: $AAB_RELEASE_PATH
+          packageName: "$PACKAGE_NAME"
+          releaseFiles: "$AAB_RELEASE_PATH"
           track: "internal"
 
       # Increment version
