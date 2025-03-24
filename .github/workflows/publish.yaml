@@ -10,7 +10,8 @@ on:
   # workflow_dispatch:
 
 env:
-  PACKAGE_NAME: "personaClick.demo_shop"
+  # PACKAGE_NAME: "personaClick.demo_shop"
+  PACKAGE_NAME: "personaClick.demo_android.app"
   AAB_RELEASE_PATH: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
   PROPERTIES_FILE_PATH: "version.properties"
 
