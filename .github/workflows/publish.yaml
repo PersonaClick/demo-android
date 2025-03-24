@@ -56,15 +56,12 @@ jobs:
           SIGNING_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
 
-      - name: Debug aab file
-        run: cat $AAB_RELEASE_PATH
-
       # Sending to Google Play
       - name: Deploy to Google Play Internal Testing
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: google-play-service-account.json
-          packageName: "$PACKAGE_NAME"
+          packageName: ${{ env.$PACKAGE_NAME }}
           releaseFiles: ${{ github.workspace }}/${{ env.AAB_RELEASE_PATH}}
           track: "internal"
 
@@ -72,7 +69,7 @@ jobs:
       - name: Bump version
         run: ./gradlew incrementVersion
         env:
-          PROPERTIES_FILE: $PROPERTIES_FILE_PATH
+          PROPERTIES_FILE: ${{ env.PROPERTIES_FILE_PATH }}
           SIGNING_STORE_FILE: ${{ github.workspace }}/app/keystore.jks
           SIGNING_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
           SIGNING_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
@@ -82,7 +79,7 @@ jobs:
       - name: Retrieve new version
         id: versionName
         run: |
-          version=$(grep "VERSION_NAME=" $PROPERTIES_FILE_PATH | cut -d'=' -f2)
+          version=$(grep "VERSION_NAME=" ${{ env.PROPERTIES_FILE_PATH }} | cut -d'=' -f2)
           echo "versionName=$version" >> $GITHUB_ENV
           echo "versionName=$version" >> $GITHUB_OUTPUT
 
@@ -96,4 +93,4 @@ jobs:
           repo: ${{ github.repository }}
           branch: master
           commit_message: "chore: bump version to ${{ steps.versionName.outputs.versionName }}"
-          file_pattern: $PROPERTIES_FILE_PATH
+          file_pattern: ${{ env.PROPERTIES_FILE_PATH }}
