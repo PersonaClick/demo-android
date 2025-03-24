@@ -61,7 +61,7 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: google-play-service-account.json
-          packageName: ${{ env.$PACKAGE_NAME }}
+          packageName: ${{ env.PACKAGE_NAME }}
           releaseFiles: ${{ github.workspace }}/${{ env.AAB_RELEASE_PATH}}
           track: "internal"
 
