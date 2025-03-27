@@ -11,7 +11,8 @@ on:
 
 env:
   # PACKAGE_NAME: "personaClick.demo_shop"
-  PACKAGE_NAME: "personaClick.demo_android.app"
+  # PACKAGE_NAME: "personaClick.demo_android.app"
+  PACKAGE_NAME: "personaClick.demo_shop"
   # TODO uncomment
   # AAB_RELEASE_PATH: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
   AAB_RELEASE_PATH: "test-aab-dir/app-prod-release.aab"
