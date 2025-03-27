@@ -67,7 +67,6 @@ jobs:
           serviceAccountJson: google-play-service-account.json
           packageName: ${{ env.PACKAGE_NAME }}
           releaseFiles: ${{ github.workspace }}/${{ env.AAB_RELEASE_PATH}}
-          status: "draft"
           track: "internal"
 
       # Increment version
