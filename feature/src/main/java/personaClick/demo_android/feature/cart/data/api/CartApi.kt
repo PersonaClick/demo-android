@@ -1,10 +1,10 @@
-package personaClick.demo_android.feature.cart.data.api
+package personaclick.demo_android.feature.cart.data.api
 
 import com.personalization.Params
 import com.personalization.SDK
 import com.personalization.api.OnApiCallbackListener
 import com.personalization.api.params.ProductItemParams
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 class CartApi(
     private val sdk: SDK

@@ -1,4 +1,4 @@
-package com.personaClick.demo_android.ui.button.view
+package com.personaclick.demo_android.ui.button.view
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,10 +10,10 @@ import androidx.annotation.ColorRes
 import androidx.annotation.DimenRes
 import androidx.annotation.StringRes
 import com.google.android.material.button.MaterialButton
-import com.personaClick.demo_android.ui.extensions.convertDimenResToDp
-import com.personaClick.demo_android.ui.extensions.setBackgroundColor
-import com.personaClick.demo_android.ui.extensions.setTextColor
-import com.personaClick.ui.R
+import com.personaclick.demo_android.ui.extensions.convertDimenResToDp
+import com.personaclick.demo_android.ui.extensions.setBackgroundColor
+import com.personaclick.demo_android.ui.extensions.setTextColor
+import com.personaclick.ui.R
 
 @SuppressLint("ViewConstructor")
 open class BaseButton @JvmOverloads constructor(

@@ -1,4 +1,4 @@
-package personaClick.demo_android.core.di
+package personaclick.demo_android.core.di
 
 import com.personalization.SDK
 import org.koin.dsl.module

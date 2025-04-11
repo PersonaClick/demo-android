@@ -1,8 +1,8 @@
-package personaClick.demo_android.feature.productDetails.domain.mappers
+package personaclick.demo_android.feature.productDetails.domain.mappers
 
-import com.personaClick.demo_android.navigation.models.NavigationProduct
-import com.personaClick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import com.personaclick.demo_android.navigation.models.NavigationProduct
+import com.personaclick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 class NavigationProductMapper {
 

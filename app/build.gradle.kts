@@ -14,10 +14,10 @@ play {
 }
 
 android {
-    namespace = "personaClick.demo_android.app"
+    namespace = "personaclick.demo_android.app"
 
     defaultConfig {
-        applicationId =  "personaClick.demo_shop"
+        applicationId =  "personaclick.demo_shop"
     }
 }
 
@@ -33,7 +33,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.core.splashscreen)
-    implementation(libs.personaClick.sdk)
+    implementation(libs.personaclick.sdk)
     implementation(project(":core"))
     implementation(project(":feature"))
     implementation(project(":navigation"))

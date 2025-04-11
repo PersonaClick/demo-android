@@ -1,10 +1,10 @@
-package personaClick.demo_android.feature.productDetails.presentation.view.description
+package personaclick.demo_android.feature.productDetails.presentation.view.description
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import com.google.android.material.card.MaterialCardView
-import personaClick.demo_android.databinding.ViewProductDetailsSaleCardBinding
+import personaclick.demo_android.databinding.ViewProductDetailsSaleCardBinding
 
 class ProductDetailsSaleCardView @JvmOverloads constructor(
     context: Context,

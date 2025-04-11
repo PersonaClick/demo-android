@@ -1,6 +1,6 @@
-package personaClick.demo_android.feature.recommendationBlock.domain.repository
+package personaclick.demo_android.feature.recommendationBlock.domain.repository
 
-import personaClick.demo_android.feature.recommendationBlock.domain.models.Recommendation
+import personaclick.demo_android.feature.recommendationBlock.domain.models.Recommendation
 
 interface RecommendationRepository {
 

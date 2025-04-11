@@ -1,10 +1,10 @@
-package personaClick.demo_android.feature.search.data.mappers
+package personaclick.demo_android.feature.search.data.mappers
 
-import personaClick.demo_android.feature.productDetails.data.mappers.ProductMapper
-import personaClick.demo_android.feature.search.data.models.CategoryDto
-import personaClick.demo_android.feature.search.data.models.SearchDto
-import personaClick.demo_android.feature.search.domain.models.Category
-import personaClick.demo_android.feature.search.domain.models.Search
+import personaclick.demo_android.feature.productDetails.data.mappers.ProductMapper
+import personaclick.demo_android.feature.search.data.models.CategoryDto
+import personaclick.demo_android.feature.search.data.models.SearchDto
+import personaclick.demo_android.feature.search.domain.models.Category
+import personaclick.demo_android.feature.search.domain.models.Search
 
 class SearchMapper(
     private val productMapper: ProductMapper

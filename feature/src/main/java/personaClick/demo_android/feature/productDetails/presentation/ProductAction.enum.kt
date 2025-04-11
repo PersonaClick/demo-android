@@ -1,4 +1,4 @@
-package personaClick.demo_android.feature.productDetails.presentation
+package personaclick.demo_android.feature.productDetails.presentation
 
 enum class ProductAction {
     ADD,

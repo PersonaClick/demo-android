@@ -1,7 +1,7 @@
-package personaClick.demo_android.feature.productDetails.domain.usecase
+package personaclick.demo_android.feature.productDetails.domain.usecase
 
-import personaClick.demo_android.feature.recommendationBlock.domain.models.Recommendation
-import personaClick.demo_android.feature.recommendationBlock.domain.repository.RecommendationRepository
+import personaclick.demo_android.feature.recommendationBlock.domain.models.Recommendation
+import personaclick.demo_android.feature.recommendationBlock.domain.repository.RecommendationRepository
 
 class GetRecommendationForProductUseCase (
     private val recommendationRepository: RecommendationRepository

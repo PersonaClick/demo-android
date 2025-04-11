@@ -1,4 +1,4 @@
-package com.personaClick.demo_android.ui.recyclerView.base.models
+package com.personaclick.demo_android.ui.recyclerView.base.models
 
 abstract class RecyclerViewItem {
 

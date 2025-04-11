@@ -1,8 +1,8 @@
-package personaClick.demo_android.feature.cart.domain.repository
+package personaclick.demo_android.feature.cart.domain.repository
 
 import kotlinx.coroutines.flow.StateFlow
-import personaClick.demo_android.feature.cart.domain.models.CartProduct
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import personaclick.demo_android.feature.cart.domain.models.CartProduct
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 interface CartRepository {
 

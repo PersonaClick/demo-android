@@ -1,11 +1,11 @@
-package personaClick.demo_android.feature.products.presentation.view.recyclerView
+package personaclick.demo_android.feature.products.presentation.view.recyclerView
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.recyclerview.widget.GridLayoutManager
-import com.personaClick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
-import com.personaClick.demo_android.ui.recyclerView.products.view.ProductsRecyclerView
-import personaClick.demo_android.feature.products.presentation.adapter.ScrollProductsAdapter
+import com.personaclick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
+import com.personaclick.demo_android.ui.recyclerView.products.view.ProductsRecyclerView
+import personaclick.demo_android.feature.products.presentation.adapter.ScrollProductsAdapter
 
 class ScrollProductsRecyclerView @JvmOverloads constructor(
     private val context: Context,

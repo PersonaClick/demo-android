@@ -1,13 +1,13 @@
-package com.personaClick.demo_android.ui.recyclerView.base.adapter
+package com.personaclick.demo_android.ui.recyclerView.base.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.personaClick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
-import com.personaClick.demo_android.ui.recyclerView.base.view.RecyclerItemView
-import com.personaClick.demo_android.ui.recyclerView.base.view.RecyclerItemViewHolder
-import com.personaClick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
+import com.personaclick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
+import com.personaclick.demo_android.ui.recyclerView.base.view.RecyclerItemView
+import com.personaclick.demo_android.ui.recyclerView.base.view.RecyclerItemViewHolder
+import com.personaclick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
 
 abstract class ListItemAdapter<I: RecyclerViewItem, IV: RecyclerItemView> (
     val items: List<I>,

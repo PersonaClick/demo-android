@@ -1,8 +1,8 @@
-package personaClick.demo_android.feature.recommendationBlock.data.models
+package personaclick.demo_android.feature.recommendationBlock.data.models
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import personaClick.demo_android.feature.productDetails.data.models.ProductDto
+import personaclick.demo_android.feature.productDetails.data.models.ProductDto
 
 @Parcelize
 data class RecommendationDto(

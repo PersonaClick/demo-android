@@ -1,7 +1,7 @@
-package personaClick.demo_android.feature.search.domain.usecase
+package personaclick.demo_android.feature.search.domain.usecase
 
-import personaClick.demo_android.feature.search.domain.repository.SearchRepository
-import personaClick.demo_android.feature.search.domain.models.Search
+import personaclick.demo_android.feature.search.domain.repository.SearchRepository
+import personaclick.demo_android.feature.search.domain.models.Search
 
 class SearchProductsUseCase (
     private val searchRepository: SearchRepository

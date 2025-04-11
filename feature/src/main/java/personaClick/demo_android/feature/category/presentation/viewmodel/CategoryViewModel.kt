@@ -1,4 +1,4 @@
-package personaClick.demo_android.feature.category.presentation.viewmodel
+package personaclick.demo_android.feature.category.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 

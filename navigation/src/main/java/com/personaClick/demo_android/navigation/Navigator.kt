@@ -1,4 +1,4 @@
-package com.personaClick.demo_android.navigation
+package com.personaclick.demo_android.navigation
 
 import androidx.navigation.NavController
 

@@ -8,14 +8,14 @@ on:
 
 jobs:
   publish_and_version_bump:
-    uses: personaClick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@master
+    uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@master
     with:
-      githubAppId: ${{ vars.PUBLIVERSIONER_ID }}
-      packageName: "personaClick.demo_shop"
+      githubAppId: ${{ vars.PERSONACLICK_COURIER_ID }}
+      packageName: "personaclick.demo_shop"
       aabReleasePath: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
       propertiesFilePath: "version.properties"
     secrets:
-      GITHUB_APP_PRIVATE_KEY: ${{ secrets.PUBLIVERSIONER_SECRET }}
+      GITHUB_APP_PRIVATE_KEY: ${{ secrets.PERSONACLICK_COURIER_SECRET }}
       GOOGLE_SERVICES_FILE_AS_BASE64: ${{ secrets.GOOGLE_SERVICES_FILE_AS_BASE64 }}
       GOOGLE_PLAY_SIGNING_KEY_FILE_AS_BASE64: ${{ secrets.GOOGLE_PLAY_SIGNING_KEY_FILE_AS_BASE64 }}
       RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}

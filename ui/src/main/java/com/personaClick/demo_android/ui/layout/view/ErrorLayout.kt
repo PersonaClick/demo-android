@@ -1,10 +1,10 @@
-package com.personaClick.demo_android.ui.layout.view
+package com.personaclick.demo_android.ui.layout.view
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import com.personaClick.ui.databinding.ViewErrorBinding
+import com.personaclick.ui.databinding.ViewErrorBinding
 
 class ErrorLayout @JvmOverloads constructor(
     context: Context,

@@ -1,10 +1,10 @@
-package personaClick.demo_android.feature.products.presentation.view.recyclerView
+package personaclick.demo_android.feature.products.presentation.view.recyclerView
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
-import com.personaClick.demo_android.ui.recyclerView.products.view.ProductItemView
-import personaClick.demo_android.R
+import com.personaclick.demo_android.ui.recyclerView.products.view.ProductItemView
+import personaclick.demo_android.R
 
 @SuppressLint("ViewConstructor")
 class ScrollProductItemView(

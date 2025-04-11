@@ -1,8 +1,8 @@
-package personaClick.demo_android.feature.recommendationBlock.data.mappers
+package personaclick.demo_android.feature.recommendationBlock.data.mappers
 
-import personaClick.demo_android.feature.productDetails.data.mappers.ProductMapper
-import personaClick.demo_android.feature.recommendationBlock.data.models.RecommendationDto
-import personaClick.demo_android.feature.recommendationBlock.domain.models.Recommendation
+import personaclick.demo_android.feature.productDetails.data.mappers.ProductMapper
+import personaclick.demo_android.feature.recommendationBlock.data.models.RecommendationDto
+import personaclick.demo_android.feature.recommendationBlock.domain.models.Recommendation
 
 class RecommendationMapper  (
     private val productMapper: ProductMapper

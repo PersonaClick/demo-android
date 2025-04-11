@@ -1,14 +1,14 @@
-package personaClick.demo_android.feature.cart.presentation.view.recyclerView
+package personaclick.demo_android.feature.cart.presentation.view.recyclerView
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import com.personaClick.demo_android.ui.extensions.updateImage
-import com.personaClick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
-import com.personaClick.demo_android.ui.recyclerView.base.view.RecyclerItemView
-import com.personaClick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
-import personaClick.demo_android.databinding.ViewCartProductItemBinding
-import personaClick.demo_android.feature.cart.presentation.models.CartProductRecyclerViewItem
+import com.personaclick.demo_android.ui.extensions.updateImage
+import com.personaclick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
+import com.personaclick.demo_android.ui.recyclerView.base.view.RecyclerItemView
+import com.personaclick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
+import personaclick.demo_android.databinding.ViewCartProductItemBinding
+import personaclick.demo_android.feature.cart.presentation.models.CartProductRecyclerViewItem
 
 class CartProductItemView @JvmOverloads constructor(
     context: Context,
