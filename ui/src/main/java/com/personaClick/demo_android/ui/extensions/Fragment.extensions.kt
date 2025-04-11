@@ -1,4 +1,4 @@
-package com.personaClick.demo_android.ui.extensions
+package com.personaclick.demo_android.ui.extensions
 
 import androidx.fragment.app.Fragment
 

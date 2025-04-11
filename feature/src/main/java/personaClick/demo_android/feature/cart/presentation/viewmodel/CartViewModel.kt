@@ -1,4 +1,4 @@
-package personaClick.demo_android.feature.cart.presentation.viewmodel
+package personaclick.demo_android.feature.cart.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -6,13 +6,13 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import personaClick.demo_android.core.settings.RecommendationSettings
-import personaClick.demo_android.feature.cart.domain.models.CartProduct
-import personaClick.demo_android.feature.cart.domain.usecase.GetCartProductsUseCase
-import personaClick.demo_android.feature.cart.domain.usecase.GetCartSumPriceUseCase
-import personaClick.demo_android.feature.cart.domain.usecase.RemoveProductFromCartUseCase
-import personaClick.demo_android.feature.recommendationBlock.domain.models.Recommendation
-import personaClick.demo_android.feature.recommendationBlock.domain.usecase.GetRecommendationUseCase
+import personaclick.demo_android.core.settings.RecommendationSettings
+import personaclick.demo_android.feature.cart.domain.models.CartProduct
+import personaclick.demo_android.feature.cart.domain.usecase.GetCartProductsUseCase
+import personaclick.demo_android.feature.cart.domain.usecase.GetCartSumPriceUseCase
+import personaclick.demo_android.feature.cart.domain.usecase.RemoveProductFromCartUseCase
+import personaclick.demo_android.feature.recommendationBlock.domain.models.Recommendation
+import personaclick.demo_android.feature.recommendationBlock.domain.usecase.GetRecommendationUseCase
 
 class CartViewModel(
     getCartProductsUseCase: GetCartProductsUseCase,

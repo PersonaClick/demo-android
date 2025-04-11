@@ -1,13 +1,13 @@
-package personaClick.demo_android.feature.search.presentation.viewmodel
+package personaclick.demo_android.feature.search.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
-import personaClick.demo_android.feature.search.domain.models.Search
-import personaClick.demo_android.feature.search.domain.usecase.SearchProductsUseCase
-import personaClick.demo_android.feature.search.domain.usecase.SearchRecommendedProductsUseCase
+import personaclick.demo_android.feature.search.domain.models.Search
+import personaclick.demo_android.feature.search.domain.usecase.SearchProductsUseCase
+import personaclick.demo_android.feature.search.domain.usecase.SearchRecommendedProductsUseCase
 
 class SearchViewModel(
     private val searchProductsUseCase: SearchProductsUseCase,

@@ -1,4 +1,4 @@
-package personaClick.demo_android.core.settings
+package personaclick.demo_android.core.settings
 
 object RecommendationSettings {
     const val SIMPLE_RECOMMENDED_CODE = "5a57812604806d58d3d98f8e9480cb97"

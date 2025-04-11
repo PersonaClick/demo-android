@@ -1,7 +1,7 @@
-package personaClick.demo_android.core.settings
+package personaclick.demo_android.core.settings
 
 object SdkSettings {
-    const val API_URL = "https://api.personaClick.ru/"
+    const val API_URL = "https://api.personaclick.ru/"
     const val PREFERENCES_KEY = "demo android"
     const val TAG = "DEMO TAG"
     const val STREAM = "android"

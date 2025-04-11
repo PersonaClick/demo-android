@@ -1,10 +1,10 @@
-package personaClick.demo_android.feature.search.presentation.adapter
+package personaclick.demo_android.feature.search.presentation.adapter
 
 import android.content.Context
-import com.personaClick.demo_android.ui.recyclerView.base.adapter.ListItemAdapter
-import com.personaClick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
-import com.personaClick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
-import personaClick.demo_android.feature.search.presentation.view.recyclerView.SearchProductItemView
+import com.personaclick.demo_android.ui.recyclerView.base.adapter.ListItemAdapter
+import com.personaclick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
+import com.personaclick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
+import personaclick.demo_android.feature.search.presentation.view.recyclerView.SearchProductItemView
 
 class SearchProductAdapter(
     private val context: Context,

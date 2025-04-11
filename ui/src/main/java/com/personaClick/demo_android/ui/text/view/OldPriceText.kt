@@ -1,12 +1,12 @@
-package com.personaClick.demo_android.ui.text.view
+package com.personaclick.demo_android.ui.text.view
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Paint
 import android.util.AttributeSet
 import androidx.annotation.DimenRes
-import com.personaClick.demo_android.ui.extensions.convertDimenResToDp
-import com.personaClick.ui.R
+import com.personaclick.demo_android.ui.extensions.convertDimenResToDp
+import com.personaclick.ui.R
 
 @SuppressLint("ViewConstructor")
 open class OldPriceText @JvmOverloads constructor(

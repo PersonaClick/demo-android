@@ -1,11 +1,11 @@
-package personaClick.demo_android.feature.productDetails.presentation.view.countCard
+package personaclick.demo_android.feature.productDetails.presentation.view.countCard
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import com.google.android.material.card.MaterialCardView
-import personaClick.demo_android.databinding.ViewCountCardBinding
+import personaclick.demo_android.databinding.ViewCountCardBinding
 
 @SuppressLint("ViewConstructor")
 open class CountCardView @JvmOverloads constructor(

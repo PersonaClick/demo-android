@@ -1,7 +1,7 @@
-package personaClick.demo_android.feature.productDetails.domain.usecase
+package personaclick.demo_android.feature.productDetails.domain.usecase
 
-import personaClick.demo_android.feature.cart.domain.repository.CartRepository
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import personaclick.demo_android.feature.cart.domain.repository.CartRepository
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 class AddProductToCartUseCase (
     private val cartRepository: CartRepository

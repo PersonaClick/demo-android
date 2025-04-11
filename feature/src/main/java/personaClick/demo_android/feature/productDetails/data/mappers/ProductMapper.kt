@@ -1,7 +1,7 @@
-package personaClick.demo_android.feature.productDetails.data.mappers
+package personaclick.demo_android.feature.productDetails.data.mappers
 
-import personaClick.demo_android.feature.productDetails.data.models.ProductDto
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import personaclick.demo_android.feature.productDetails.data.models.ProductDto
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 class ProductMapper {
 

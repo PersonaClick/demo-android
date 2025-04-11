@@ -1,4 +1,4 @@
-package personaClick.demo_android.app.presentation
+package personaclick.demo_android.app.presentation
 
 import android.os.Bundle
 import android.view.Menu
@@ -13,9 +13,9 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.NavHostFragment
 import org.koin.android.ext.android.get
 import org.koin.core.parameter.parametersOf
-import personaClick.demo_android.app.R
-import personaClick.demo_android.app.databinding.ActivityMainBinding
-import com.personaClick.demo_android.navigation.Navigator
+import personaclick.demo_android.app.R
+import personaclick.demo_android.app.databinding.ActivityMainBinding
+import com.personaclick.demo_android.navigation.Navigator
 
 class MainActivity : AppCompatActivity(), LifecycleOwner {
 

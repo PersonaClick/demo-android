@@ -1,6 +1,6 @@
-package personaClick.demo_android.feature.search.presentation.models
+package personaclick.demo_android.feature.search.presentation.models
 
-import com.personaClick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
+import com.personaclick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
 
 data class CategoryRecyclerViewItem(
     val id: String,

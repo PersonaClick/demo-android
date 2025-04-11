@@ -1,4 +1,4 @@
-package personaClick.demo_android.feature.recommendationBlock.presentation.view
+package personaclick.demo_android.feature.recommendationBlock.presentation.view
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,14 +7,14 @@ import android.util.AttributeSet
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
-import com.personaClick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
-import com.personaClick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
-import personaClick.demo_android.R
-import personaClick.demo_android.feature.productDetails.domain.models.Product
-import com.personaClick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
-import personaClick.demo_android.feature.recommendationBlock.presentation.view.recyclerView.RecommendationProductsRecyclerView
-import personaClick.demo_android.feature.products.presentation.mappers.ProductItemMapper
-import personaClick.demo_android.feature.recommendationBlock.domain.models.Recommendation
+import com.personaclick.demo_android.ui.recyclerView.base.models.RecyclerViewItem
+import com.personaclick.demo_android.ui.recyclerView.base.listener.OnItemClickListener
+import personaclick.demo_android.R
+import personaclick.demo_android.feature.productDetails.domain.models.Product
+import com.personaclick.demo_android.ui.recyclerView.products.models.ProductRecyclerViewItem
+import personaclick.demo_android.feature.recommendationBlock.presentation.view.recyclerView.RecommendationProductsRecyclerView
+import personaclick.demo_android.feature.products.presentation.mappers.ProductItemMapper
+import personaclick.demo_android.feature.recommendationBlock.domain.models.Recommendation
 
 class RecommendationBlockView @JvmOverloads constructor(
     context: Context,

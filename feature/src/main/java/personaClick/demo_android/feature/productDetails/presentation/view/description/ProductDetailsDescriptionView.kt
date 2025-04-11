@@ -1,11 +1,11 @@
-package personaClick.demo_android.feature.productDetails.presentation.view.description
+package personaclick.demo_android.feature.productDetails.presentation.view.description
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
-import personaClick.demo_android.databinding.ViewProductDetailsDescriptionBinding
-import personaClick.demo_android.feature.productDetails.domain.models.Product
+import personaclick.demo_android.databinding.ViewProductDetailsDescriptionBinding
+import personaclick.demo_android.feature.productDetails.domain.models.Product
 
 class ProductDetailsDescriptionView @JvmOverloads constructor(
     context: Context,

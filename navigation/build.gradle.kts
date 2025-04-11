@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.personaClick.demo_android.navigation"
+    namespace = "com.personaclick.demo_android.navigation"
 }
 
 dependencies {

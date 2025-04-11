@@ -1,16 +1,16 @@
-package personaClick.demo_android.feature.products.presentation.view.text
+package personaclick.demo_android.feature.products.presentation.view.text
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
-import personaClick.demo_android.R
+import personaclick.demo_android.R
 
 @SuppressLint("ViewConstructor")
 class OldPriceText @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : com.personaClick.demo_android.ui.text.view.OldPriceText(
+) : com.personaclick.demo_android.ui.text.view.OldPriceText(
     context = context,
     attrs = attrs,
     defStyleAttr = defStyleAttr,

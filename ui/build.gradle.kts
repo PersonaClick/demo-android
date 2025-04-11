@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.personaClick.ui"
+    namespace = "com.personaclick.ui"
     viewBinding {
         enable = true
     }

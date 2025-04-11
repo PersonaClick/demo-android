@@ -1,9 +1,9 @@
-package personaClick.demo_android.feature.search.data.repository
+package personaclick.demo_android.feature.search.data.repository
 
-import personaClick.demo_android.feature.search.data.api.SearchApi
-import personaClick.demo_android.feature.search.data.mappers.SearchMapper
-import personaClick.demo_android.feature.search.domain.repository.SearchRepository
-import personaClick.demo_android.feature.search.domain.models.Search
+import personaclick.demo_android.feature.search.data.api.SearchApi
+import personaclick.demo_android.feature.search.data.mappers.SearchMapper
+import personaclick.demo_android.feature.search.domain.repository.SearchRepository
+import personaclick.demo_android.feature.search.domain.models.Search
 
 class SearchRepositoryImpl (
     private val productApi: SearchApi,

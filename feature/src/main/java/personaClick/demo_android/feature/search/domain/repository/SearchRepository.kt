@@ -1,6 +1,6 @@
-package personaClick.demo_android.feature.search.domain.repository
+package personaclick.demo_android.feature.search.domain.repository
 
-import personaClick.demo_android.feature.search.domain.models.Search
+import personaclick.demo_android.feature.search.domain.models.Search
 
 interface SearchRepository {
 

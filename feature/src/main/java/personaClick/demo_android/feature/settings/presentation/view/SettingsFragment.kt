@@ -1,4 +1,4 @@
-package personaClick.demo_android.feature.settings.presentation.view
+package personaclick.demo_android.feature.settings.presentation.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import com.personalization.SDK
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import personaClick.demo_android.core.utils.SdkUtils
-import personaClick.demo_android.databinding.FragmentSettingsBinding
-import personaClick.demo_android.feature.settings.presentation.viewmodel.SettingsViewModel
+import personaclick.demo_android.core.utils.SdkUtils
+import personaclick.demo_android.databinding.FragmentSettingsBinding
+import personaclick.demo_android.feature.settings.presentation.viewmodel.SettingsViewModel
 
 class SettingsFragment : Fragment() {
 
