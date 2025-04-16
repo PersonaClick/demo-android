@@ -11,7 +11,7 @@ jobs:
     uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@master
     with:
       githubAppId: ${{ vars.PERSONACLICK_COURIER_ID }}
-      packageName: "personaClick.demo_shop"
+      packageName: "personaclick.demo_shop"
       aabReleasePath: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
       propertiesFilePath: "version.properties"
     secrets:
