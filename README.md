@@ -7,6 +7,7 @@ PersonaClick Demo Android - application to demonstrate working with SDK.
 ## Configure
 
 Versions:
+
 - PersonaClick SDK 2.0.20
 - Java 20
 - Kotlin 2.0.0
@@ -19,7 +20,7 @@ Copy `google-services.json` file from [Firebase console](https://console.firebas
 
 For detailed information on methods used from the SDK, please refer to the documentation available at the following link:
 
-[Official API references](https://reference.api.personaclick.com/#introduction)
+[Official API references](https://personaclick.atlassian.net/wiki/spaces/english/overview?mode=global)
 
 ## Screenshots
 
