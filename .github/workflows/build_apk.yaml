@@ -2,15 +2,17 @@ name: Build APK
 
 on:
   pull_request:
-    types:
-      - closed
-    branches:
-      - master
-  workflow_dispatch:
+  # TODO uncomment
+  #   types:
+  #     - closed
+  #   branches:
+  #     - master
+  # workflow_dispatch:
 
 jobs:
   build_release_apk:
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/'))
+    # TODO uncomment
+    # if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/'))
     uses: personaclick/workflow/.github/workflows/reusable-android-release-apk.yaml@master
     with:
       appId: ${{ vars.PERSONACLICK_COURIER_ID }}
