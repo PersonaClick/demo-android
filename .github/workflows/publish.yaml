@@ -14,7 +14,9 @@ jobs:
     # if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/'))
     # uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@1cfee7e2e762eed3a3d7d67c413aa0bae7f5ffae
     # TODO replacements
-    uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@d6d23e924224f75a134a47b364002c48bf0c88da
+    # TODO uncomment
+    # uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@d6d23e924224f75a134a47b364002c48bf0c88da
+    uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@fix/publish
     with:
       githubAppId: ${{ vars.PERSONACLICK_COURIER_ID }}
       packageName: "personaClick.demo_shop"
