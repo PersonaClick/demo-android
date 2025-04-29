@@ -17,7 +17,7 @@ android {
     namespace = "personaclick.demo_android.app"
 
     defaultConfig {
-        applicationId =  "personaclick.demo_shop"
+        applicationId =  "personaClick.demo_shop"
     }
 }
 
