@@ -11,10 +11,10 @@ on:
 jobs:
   google-play-publish:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/'))
-    uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@1cfee7e2e762eed3a3d7d67c413aa0bae7f5ffae
+    uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@7907f21814b2f998ffd80451754ce026e3553265
     with:
       githubAppId: ${{ vars.PERSONACLICK_COURIER_ID }}
-      packageName: "personaclick.demo_shop"
+      packageName: "personaClick.demo_shop"
       aabReleasePath: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
       propertiesFilePath: "version.properties"
     secrets:
