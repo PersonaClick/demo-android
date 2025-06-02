@@ -13,12 +13,12 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/'))
     uses: personaclick/workflow/.github/workflows/reusable-android-google-play-publish.yaml@7907f21814b2f998ffd80451754ce026e3553265
     with:
-      githubAppId: ${{ vars.PERSONACLICK_COURIER_ID }}
+      githubAppId: ${{ vars.PUBLISHER_ID }}
       packageName: "personaClick.demo_shop"
       aabReleasePath: "app/build/outputs/bundle/prodRelease/app-prod-release.aab"
       propertiesFilePath: "version.properties"
     secrets:
-      GITHUB_APP_PRIVATE_KEY: ${{ secrets.PERSONACLICK_COURIER_SECRET }}
+      GITHUB_APP_PRIVATE_KEY: ${{ secrets.PUBLISHER_SECRET }}
       GOOGLE_SERVICES_FILE_AS_BASE64: ${{ secrets.GOOGLE_SERVICES_FILE_AS_BASE64 }}
       GOOGLE_PLAY_SIGNING_KEY_FILE_AS_BASE64: ${{ secrets.GOOGLE_PLAY_SIGNING_KEY_FILE_AS_BASE64 }}
       RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
